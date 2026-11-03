@@ -29,4 +29,6 @@ jobs:
         run: npm run lint
 
       - name: Build
+        env:
+          NEXT_PUBLIC_WEB3FORMS_KEY: ${{ vars.NEXT_PUBLIC_WEB3FORMS_KEY }}
         run: npm run build
